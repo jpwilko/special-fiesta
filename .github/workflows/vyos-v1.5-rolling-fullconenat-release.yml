@@ -2,9 +2,7 @@ name: VyOS v1.5 Rolling FULLCONENAT Release
 permissions:
   contents: write
 on:
-  push:
-    tags:
-      - "v1.5*FULL*"
+  workflow_dispatch:
 
 env:
   GIT_CLONE_URL: https://github.com/vyos/vyos-build
