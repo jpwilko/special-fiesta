@@ -2,7 +2,9 @@ name: VyOS v1.4 LTS Release
 permissions:
   contents: write
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - 'v1.4.*'
 
 env:
   GIT_CLONE_URL: https://github.com/vyos/vyos-build
